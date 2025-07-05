@@ -1,0 +1,48 @@
+import './index-2.css';
+import Header from './Header.jsx';
+import Calendar from './Calendar.jsx';
+import QuoteBegin from './QuoteBegin.jsx';
+import Footer from './Footer.jsx';
+import ProgressBar from './ProgressBar.jsx';
+import { useEffect, useState } from 'react';
+
+function App() {
+  const [blurred, setBlurred] = useState(false);
+
+  useEffect(() => {
+    // Blur background when scrolling beyond 100vh
+    const handleScroll = () => {
+      const scrolledPast100vh = window.scrollY > window.innerHeight;
+      setBlurred(scrolledPast100vh);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // Animate elements on scroll with Intersection Observer
+    const elements = document.querySelectorAll('.scroll-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <>
+      <div className={`background-react ${blurred ? 'blur' : ''}`} />
+      <Header />
+      <QuoteBegin />
+      <Calendar />
+      <ProgressBar />
+      <Footer />
+    </>
+  );
+}
+
+export default App;

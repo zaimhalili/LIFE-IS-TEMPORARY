@@ -1,0 +1,6 @@
+Next step:
+-footer
+-chat + write name of person + choose person
+-progress bar
+-display text in bullet points
+-create cards + copy button
