@@ -32,15 +32,25 @@ function BegForm() {
                     <div className="progress-bar"></div>
                 </div>
             </div>
-            <label htmlFor="choose-person">Choose the person you want to write for:</label>
-            <input itemType='text' id='add-name' />
-            <button itemType='submit' className='submit-name-button'>Add Name</button>
-            <select name="people" className="people">
-                <option value="Mom">Mom</option>
-                <option value="Dad">Dad</option>
-                <option value="Brother">Brother</option>
-                <option value="Best Friend">Best Friend</option>
-            </select>
+
+            <div className='choose-person-container'>
+
+                <input itemType='text' id='add-name' placeholder='Choose the dedicated person..'/>
+
+                <button itemType='submit' className='submit-name-button'>
+                    Add Name
+                </button>
+
+                <select name="people" className="people">
+                    <option value="Mom">Mom</option>
+                    <option value="Dad">Dad</option>
+                    <option value="Brother">Brother</option>
+                    <option value="Best Friend">Best Friend</option>
+                </select>
+
+                
+            </div>
+            <input itemType='text' id='write-sentence' placeholder='Explain why you are grateful for this specific person..' maxLength={100}/>
         </section>
     );
 }

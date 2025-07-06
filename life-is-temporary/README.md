@@ -1,4 +1,4 @@
-## 🌟 What is the Memory Wall?
+## 🌟 What is the Memo Wall?
 
 * A **Memory Wall** is a screen in your app that visually displays all the gratitude notes the user has written.
 * Each note shows up as a **card** with a short preview of the message, the date it was created, and optionally an image.
@@ -20,7 +20,7 @@ Visually engaging display of these notes as cards in a grid/timeline.
 Optional notifications reminding the user to reflect and add new notes.
 
 🔹 **Local Storage**:
-Notes saved locally using `localStorage` or `electron-store` so they persist across app restarts.
+Notes saved locally using `localStorage`so they persist across app restarts.
 
 🔹 **Nice UI**:
 Clean, modern design with light/dark mode and smooth animations.
@@ -31,9 +31,7 @@ Clean, modern design with light/dark mode and smooth animations.
 
 ### 🔎 **Day 1 – Project Setup**
 
-* Initialize your React + Electron app.
-
-  * Recommended: Vite + Electron Forge or Electron Builder.
+* Initialize your Reactapp.
 
 * Create basic folder structure:
   `/src/components`, `/src/pages`, `/src/utils`.
@@ -89,7 +87,6 @@ Clean, modern design with light/dark mode and smooth animations.
 
   * Fade in new notes.
   * Animate opening/closing of note details (e.g., with Framer Motion).
-
 ---
 
 ### 🧪 **Day 7 – Testing, Packaging, Demo**
@@ -106,4 +103,4 @@ Clean, modern design with light/dark mode and smooth animations.
 ```
 
 *About Section will include some info about the site how to use it a demo and some info about me
-*will include my email for problems and glitches with the app
+*will include my email for problems and feedback about the app

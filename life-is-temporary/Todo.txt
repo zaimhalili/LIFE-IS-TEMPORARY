@@ -1,6 +1,13 @@
 Next step:
--footer
--chat + write name of person + choose person
--progress bar
--display text in bullet points
--create cards + copy button
+-display sentences already written for a person in a div with bullet points
+-when a text is written add option to save it
+-create cards with hover effects to let you show the text you wrote + copy button + add image option
+-API Quote
+
+## Memory Wall:
+    For Each Card:
+        -image 
+        -date when they were written
+        -text
+        -copy text button
+        -delete option

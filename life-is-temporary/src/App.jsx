@@ -4,6 +4,7 @@ import QuoteBegin from './QuoteBegin.jsx';
 import BegForm from './BegForm.jsx';
 import Footer from './Footer.jsx';
 import { useEffect, useState } from 'react';
+import MemoryWall from './MemoryWall.jsx';
 
 function App() {
   const [blurred, setBlurred] = useState(false);
@@ -38,6 +39,7 @@ function App() {
       <Header />
       <QuoteBegin />
       <BegForm />
+      <MemoryWall />
       <Footer />
     </>
   );
