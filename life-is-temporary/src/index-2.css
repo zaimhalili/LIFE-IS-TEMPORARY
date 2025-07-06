@@ -32,8 +32,19 @@
     transform: translateY(0);
 }
 
+.beg-form {
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
+    background-color: darkolivegreen;
+}
+
 /*Calendar*/
 .calendar-container {
+    grid-row: 2 / 3;
+    /*2nd row til 4th*/
+    grid-column: 2 / 3;
+    /*3rd column til 3rd*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,9 +59,6 @@
     text-align: center;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-self: flex-start;
-    align-self: center;
-    margin: 150px 10px 0 150px;
 }
 
 #month-name {
@@ -90,6 +98,8 @@
 
 /*Progress Bar*/
 .progress {
+    grid-row: 2 / 3;
+    grid-column: 4 / 9;
     height: 100px;
     width: 850px;
     background-color: #D9D9D9;
@@ -98,10 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-self: flex-end;
-    align-self: flex-start;
     border-radius: 10px;
-    margin: 0px 150px 100px 10px;
 }
 
 .progress-text {
@@ -133,6 +140,9 @@
 
 /*Write a message*/
 
+
+
+
 /*Footer*/
 footer {
     background-color: rgba(37, 61, 44, 1);
@@ -156,10 +166,19 @@ footer {
 }
 
 @media screen and (max-width:500px) {
-    .progress{
+    .progress {
         width: 50%;
     }
-    .calendar-container{
+
+    .calendar-container {
         width: 50%;
     }
+}
+
+@media screen and (max-width:800px) {
+    
+}
+
+@media screen and (max-width:1200px) {
+    
 }

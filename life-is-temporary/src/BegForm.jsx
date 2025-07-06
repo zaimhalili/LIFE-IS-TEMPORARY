@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Beginning of Form
 function BegForm() {
     const date = new Date();
 
@@ -31,6 +32,15 @@ function BegForm() {
                     <div className="progress-bar"></div>
                 </div>
             </div>
+            <label htmlFor="choose-person">Choose the person you want to write for:</label>
+            <input itemType='text' id='add-name' />
+            <button itemType='submit' className='submit-name-button'>Add Name</button>
+            <select name="people" className="people">
+                <option value="Mom">Mom</option>
+                <option value="Dad">Dad</option>
+                <option value="Brother">Brother</option>
+                <option value="Best Friend">Best Friend</option>
+            </select>
         </section>
     );
 }
