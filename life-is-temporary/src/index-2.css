@@ -89,10 +89,10 @@
 }
 
 /*Progress Bar*/
-.progress{
+.progress {
     height: 100px;
     width: 850px;
-    background-color:#D9D9D9;
+    background-color: #D9D9D9;
     overflow: hidden;
     flex-direction: column;
     display: flex;
@@ -103,7 +103,8 @@
     border-radius: 10px;
     margin: 0px 150px 100px 10px;
 }
-.progress-text{
+
+.progress-text {
     font-size: 20px;
     font-family: cursive;
     font-weight: bold;
@@ -152,4 +153,13 @@ footer {
     border-radius: 2px;
     color: #D9D9D9;
     font-size: 25px;
+}
+
+@media screen and (max-width:500px) {
+    .progress{
+        width: 50%;
+    }
+    .calendar-container{
+        width: 50%;
+    }
 }

@@ -1,9 +1,8 @@
 import './index-2.css';
 import Header from './Header.jsx';
-import Calendar from './Calendar.jsx';
 import QuoteBegin from './QuoteBegin.jsx';
+import BegForm from './BegForm.jsx';
 import Footer from './Footer.jsx';
-import ProgressBar from './ProgressBar.jsx';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -38,8 +37,7 @@ function App() {
       <div className={`background-react ${blurred ? 'blur' : ''}`} />
       <Header />
       <QuoteBegin />
-      <Calendar />
-      <ProgressBar />
+      <BegForm />
       <Footer />
     </>
   );

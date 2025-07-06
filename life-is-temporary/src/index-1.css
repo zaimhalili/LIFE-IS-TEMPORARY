@@ -49,6 +49,7 @@ html {
     font-weight: bold;
 }
 
+/*Life is Temporary - title*/
 .title {
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -59,62 +60,6 @@ html {
     margin: auto;
     margin-top: 10px;
     cursor: default;
-}
-
-/*Dark Mode Toggle*/
-.input {
-    visibility: hidden;
-}
-
-.label {
-    position: absolute;
-    justify-content: flex-end;
-    width: 80px;
-    height: 40px;
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.circle {
-    width: 34px;
-    background-color: #BE5103;
-    height: 34px;
-    border-radius: 50%;
-    top: 3px;
-    position: absolute;
-    left: 3px;
-    animation: toggleOff 0.3s linear forwards;
-
-}
-
-.input:checked+.label {
-    background-color: #000000;
-}
-
-.input:checked+.label .circle {
-    animation: toggleOn 0.3s linear forwards;
-    background-color: #253D2C;
-}
-
-@keyframes toggleOn {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(40px);
-    }
-}
-
-@keyframes toggleOff {
-    0% {
-        transform: translateX(40px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
 }
 
 /*Nav-Bar Options*/
@@ -138,6 +83,7 @@ html {
 }
 
 li:hover,
+.user-icon:hover,
 .home:hover,
 .about:hover,
 .contact:hover {
@@ -145,6 +91,7 @@ li:hover,
     transform: scale(1.1);
 }
 
+.user-icon,
 .home,
 .about,
 .contact,
@@ -156,6 +103,67 @@ li:hover,
     border: 10px;
     border-color: #BE5103;
 }
+
+/*Dark Mode Toggle
+.input {
+    visibility: hidden;
+}
+
+.label {
+    display: flex;
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: #D4AF37;
+    border-radius: 50%;
+    top: 3px;
+    position: absolute;
+    left: 3px;
+    animation: toggleOff 0.3s linear forwards;
+
+}
+
+.input:checked+.label {
+    background-color: #000000;
+}
+
+.input:checked+.label .circle {
+    animation: toggleOn 0.3s linear forwards;
+    background-color: #253D2C;
+}
+
+@keyframes toggleOn {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+@keyframes toggleOff {
+    0% {
+        transform: translateX(40px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+*/
+
 
 .initial-page {
     display: flex;
@@ -169,7 +177,7 @@ li:hover,
     height: 100px;
     width: 250px;
     font-size: 30px;
-    color:#D9D9D9;
+    color: #D9D9D9;
     font-weight: lighter;
     background-color: rgba(146, 0, 90, 0.3);
     border-radius: 10px;
@@ -177,7 +185,7 @@ li:hover,
     border-width: 3px;
     box-shadow: 6px 6px 10px #660033;
     transition: 0.3s;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     text-align: center;
     align-items: center;
@@ -202,8 +210,8 @@ li:hover,
     height: 300px;
     max-height: 500px;
     min-width: 250px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(4px);
+    /*background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);*/
     display: flex;
     float: inline-end;
     /*background: linear-gradient(to right, #29AB87, #ff0080);
@@ -212,7 +220,7 @@ li:hover,
     background-clip: text;
     color: transparent;*/
     color: blanchedalmond;
-    font-size: 35px;
+    font-size: 50px;
     border-radius: 20px;
     flex-wrap: wrap;
     text-align: center;
@@ -225,7 +233,7 @@ li:hover,
     overflow-x: hidden;
     padding: 10px;
     cursor: default;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {
