@@ -1,5 +1,6 @@
-import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
 //Beginning of Form
 function BegForm() {
     const date = new Date();
@@ -12,22 +13,22 @@ function BegForm() {
     return (
         <section className='beg-form'>
             <div className="calendar-container">
-                <div id="day-name" >
+                <div className="day-name" >
                     {dayName}
                 </div>
-                <div id="day-number" >
+                <div className="day-number" >
                     {dayNumber}
                 </div>
-                <div id="month-name">
+                <div className="month-name">
                     {monthName}
                 </div>
-                <div id="year">
+                <div className="year">
                     {year}
                 </div>
             </div>
 
             <div className="progress">
-                <p className="progress-text">Progress Today <div className="fraction">0/3</div></p>
+                <p className="progress-text">Progress Today <span className="fraction">0/3</span></p>
                 <div className="progress-container">
                     <div className="progress-bar"></div>
                 </div>
@@ -35,10 +36,10 @@ function BegForm() {
 
             <div className='choose-person-container'>
 
-                <input itemType='text' id='add-name' placeholder='Choose the dedicated person..'/>
+                <input itemType='text' className='add-name' placeholder='Choose the dedicated person..' />
 
                 <button itemType='submit' className='submit-name-button'>
-                    Add Name
+                    <FontAwesomeIcon icon={faCheck} className='submit-name-icon' />
                 </button>
 
                 <select name="people" className="people">
@@ -48,9 +49,13 @@ function BegForm() {
                     <option value="Best Friend">Best Friend</option>
                 </select>
 
-                
+
             </div>
-            <input itemType='text' id='write-sentence' placeholder='Explain why you are grateful for this specific person..' maxLength={100}/>
+
+            <input itemType='text' className='write-sentence' placeholder='Explain why you are grateful for this specific person..' maxLength={100} />
+            <button itemType='submit' className='submit-sentence-button'>
+                <FontAwesomeIcon icon={faPaperPlane} className='submit-sentence-icon' />
+            </button>
         </section>
     );
 }
