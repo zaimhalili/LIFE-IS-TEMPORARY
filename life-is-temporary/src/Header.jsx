@@ -5,10 +5,10 @@ import { faLightbulb } from '@fortawesome/free-regular-svg-icons';
 function Header() {
     return (
         <header className="nav-bar">
-            <h1 className="title">
+            <h1 className="title-rubik-glitch-regular">
                 <a href="/index.html" className="title-link">LIFE IS TEMPORARY</a>
             </h1>
-            <ul className="aboutList">
+            <ul className="aboutList-Cherry-Bomb-One-static">
                 <li>
                     <a href="life-is-temporary/index.html" className="home">Home</a>
                 </li>

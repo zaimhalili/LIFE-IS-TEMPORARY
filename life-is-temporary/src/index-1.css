@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Dancing+Script:wght@400..700&family=Press+Start+2P&family=Rubik+Glitch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
 * {
     transition: all 0.3s ease-in-out;
 }
@@ -61,9 +64,8 @@ html {
 }
 
 /*Life is Temporary - title*/
-.title {
+.title-rubik-glitch-regular {
     font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
     color: bisque;
     display: flex;
@@ -72,10 +74,16 @@ html {
     margin-top: 10px;
     cursor: default;
     z-index: 10;
+    font-family: "Rubik Glitch", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Cherry Bomb title*/
+.cherry-bomb-title {
+    font-family: 'Cherry Bomb One', cursive;
 }
 
 /*Nav-Bar Options*/
-.aboutList {
+.aboutList-Cherry-Bomb-One-static {
     background-color: transparent;
     display: flex;
     align-items: flex-start;
@@ -86,7 +94,7 @@ html {
     color: peachpuff;
     padding-right: 70px;
     padding-left: 70px;
-    font-family: monospace;
+    font-family: 'Cherry Bomb One', cursive;
     font-weight: lighter;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -133,17 +141,6 @@ li:hover,
     color: #BE5103;
     transform: scale(1.1);
 }
-/*Dark Mode Toggle
-.input {
-
-
-.input:checked+.label {
-    background-color: #000000;
-}
-
-
-*/
-
 
 .initial-page {
     display: flex;
@@ -184,6 +181,12 @@ li:hover,
     color: #e00070;
 }
 
+.cookie {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /*Quoted Text*/
 .quote {
     width: 700px;
@@ -204,7 +207,7 @@ li:hover,
     border-radius: 20px;
     flex-wrap: wrap;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Cookie", system-ui;
     word-break: keep-all;
     word-wrap: break-word;
     margin: 0px 30px 0px 20px;
@@ -260,7 +263,7 @@ li:hover,
     }
 }
 
-.dark-toggle-checkbox:checked + .dark-mode .lightbulb-icon {
+.dark-toggle-checkbox:checked+.dark-mode .lightbulb-icon {
     color: #ffe066;
     filter: drop-shadow(0 0 10px #ffe066) drop-shadow(0px 0px 100px rgba(255, 240, 24, 1)) contrast(10);
     transform: scale(1.4);
