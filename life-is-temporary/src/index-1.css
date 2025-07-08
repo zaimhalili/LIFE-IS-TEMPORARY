@@ -34,19 +34,30 @@ html {
 
 /*Parent - nav-bar*/
 .nav-bar {
-    background-color: rgba(37, 61, 44, 0.8);
+    position: sticky;
     flex-wrap: wrap;
     flex-direction: column;
     display: flex;
     width: 100%;
     max-width: 100vw;
     box-sizing: border-box;
-    z-index: 10;
     justify-self: center;
     padding: 10px 30px;
     height: fit-content;
     border-radius: 2px;
     font-weight: bold;
+    z-index: 10;
+    overflow: hidden;
+    /* ensures the pseudo-element doesn't spill out */
+}
+
+.nav-bar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(12px) brightness(0.7);
+    z-index: 0;
+    border-radius: 2px;
 }
 
 /*Life is Temporary - title*/
@@ -60,6 +71,7 @@ html {
     margin: auto;
     margin-top: 10px;
     cursor: default;
+    z-index: 10;
 }
 
 /*Nav-Bar Options*/
@@ -80,21 +92,22 @@ html {
     padding-bottom: 15px;
     margin-bottom: 0;
     border-radius: 5px;
+    z-index: 10;
 }
 
 li:hover,
 .user-icon:hover,
 .home:hover,
 .about:hover,
-.contact:hover {
+.dark-mode:hover {
     color: #BE5103;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .user-icon,
 .home,
 .about,
-.contact,
+.dark-mode,
 .title-link {
     text-decoration: none;
     color: bisque;
@@ -104,64 +117,31 @@ li:hover,
     border-color: #BE5103;
 }
 
+.dark-mode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: bisque;
+    font-size: 1.2em;
+    padding: 0 8px;
+    transition: color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.dark-mode:hover {
+    color: #BE5103;
+    transform: scale(1.1);
+}
 /*Dark Mode Toggle
 .input {
-    visibility: hidden;
-}
 
-.label {
-    display: flex;
-    position: absolute;
-    width: 55px;
-    height: 25px;
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    cursor: pointer;
-    align-items: center;
-    justify-self: flex-end;
-    align-self: center;
-}
-
-.circle {
-    width: 20px;
-    height: 20px;
-    background-color: #D4AF37;
-    border-radius: 50%;
-    top: 3px;
-    position: absolute;
-    left: 3px;
-    animation: toggleOff 0.3s linear forwards;
-
-}
 
 .input:checked+.label {
     background-color: #000000;
 }
 
-.input:checked+.label .circle {
-    animation: toggleOn 0.3s linear forwards;
-    background-color: #253D2C;
-}
 
-@keyframes toggleOn {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(30px);
-    }
-}
-
-@keyframes toggleOff {
-    0% {
-        transform: translateX(40px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
 */
 
 
@@ -278,4 +258,20 @@ li:hover,
     .getStarted {
         margin-right: 0;
     }
+}
+
+.dark-toggle-checkbox:checked + .dark-mode .lightbulb-icon {
+    color: #ffe066;
+    filter: drop-shadow(0 0 10px #ffe066) drop-shadow(0px 0px 100px rgba(255, 240, 24, 1)) contrast(10);
+    transform: scale(1.4);
+    transition: color 0.3s, filter 0.3s, transform 0.3s;
+}
+
+.lightbulb-icon {
+    color: bisque;
+    transition: color 0.3s, filter 0.3s, transform 0.3s;
+}
+
+.lightbulb-icon:hover {
+    color: #BE5103;
 }

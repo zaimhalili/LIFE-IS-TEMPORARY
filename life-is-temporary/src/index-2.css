@@ -142,7 +142,7 @@
     transition: width 0.3s ease;
 }
 
-/*Choose Person to whom you will write a message*/
+/*Choose Person to whom you will write a message - Container*/
 .choose-person-container {
     grid-row: 5 / 5;
     grid-column: 4 / 9;
@@ -273,7 +273,7 @@ option {
 
 .container-memory {
     display: grid;
-    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
     grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw 10vw;
 }
 
@@ -282,12 +282,57 @@ option {
     grid-column: 2 / 10;
     background-color: blanchedalmond;
     border-radius: 20px;
+    display: flex;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    align-items: center;
     flex-wrap: wrap;
-    overflow: auto;
-    
+    overflow-x: hidden;
+    overflow-y: auto;
+    cursor: default;
+}
+
+.memory-wall {
+    grid-row: 5 / 12;
+    grid-column: 1 / 11;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.wall-elem {
+    height: 30vh;
+    width: 20vw;
+    background-color: #253D2C;
+    border-radius: 20px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.wall-elem:hover{
+    transform: scale(1.5);
+}
+
+img{
+    width: max-content;
+    height: 40%;
+    display: flex;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.date-memory{
+
 }
 
 /*Footer*/
@@ -328,7 +373,8 @@ footer {
     }
 
     .people {
-        font-size: 15px;
+        font-size: 2px;
+        width: 2vw;
     }
 
     .year {
@@ -425,7 +471,8 @@ footer {
 
     .people {
         margin: 0;
-        font-size: 20px;
+        font-size: 18px;
+        width: 6vw;
     }
 
     .submit-name-button {
