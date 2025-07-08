@@ -14,15 +14,86 @@ export default function MemoryWall() {
                 <div className="memory-wall">
                     <div className="wall-elem">
                         <img src="" alt="Image" />
-                        <div className="date-memory"><p>05/10/20
-                        </p></div>
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
                         <div className="sentences-memory">
                             <p>Hello</p><br />
                             <p>My name is Zaim</p>
                         </div>
                     </div>
-                    <div className="wall-elem"></div>
-                    <div className="wall-elem"></div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
+                    <div className="wall-elem">
+                        <img src="" alt="Image" />
+                        <div className="date-memory"><span>05/10/20
+                        </span></div>
+                        <div className="sentences-memory">
+                            <p>Hello</p><br />
+                            <p>My name is Zaim</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 

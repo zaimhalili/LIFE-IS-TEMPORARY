@@ -13,7 +13,7 @@ function App() {
     // Blur background when scrolling beyond 100vh
     const handleScroll = () => {
       const scrolledPast100vh = window.scrollY > window.innerHeight;
-      setBlurred(scrolledPast100vh);
+      setBlurred(scrolledPast100vh);v
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
